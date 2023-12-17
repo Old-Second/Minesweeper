@@ -1,0 +1,15 @@
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

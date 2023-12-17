@@ -1,0 +1,88 @@
+.container {
+    width: 100vw;
+}
+
+.app {
+    width: 100vw;
+    position: absolute;
+    top: 40vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.box {
+    text-align: center;
+    background-color: #CCCCCC;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 60px auto;
+    width: min-content;
+    transform: scale(1.25);
+}
+
+.topbar {
+    margin: 10px auto;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 5px solid #FFF;
+    border-right: 5px solid #FFF;
+    border-top: 5px solid #808080;
+    border-left: 5px solid #808080;
+}
+
+.status {
+    height: 25px;
+    border-bottom: 2px solid #808080;
+    border-right: 2px solid #808080;
+    border-top: 2px solid #FFF;
+    border-left: 2px solid #FFF;
+}
+
+.status:active {
+    border-bottom: 2px solid #FFF;
+    border-right: 2px solid #FFF;
+    border-top: 2px solid #808080;
+    border-left: 2px solid #808080;
+}
+
+.num-panel {
+    display: flex;
+    background-color: #000;
+    border-bottom: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+    border-top: 1px solid #808080;
+    border-left: 1px solid #808080;
+}
+
+.grid-container {
+    margin: 10px auto;
+    border-bottom: 5px solid #FFF;
+    border-right: 5px solid #FFF;
+    border-top: 5px solid #808080;
+    border-left: 5px solid #808080;
+    display: grid;
+    /*grid-template-columns: repeat(10, 1fr);*/
+    /*grid-template-rows: repeat(10, 1fr);*/
+    /*grid-gap: 5px;*/
+    /*width: 500px;*/
+    /*height: 500px;*/
+}
+
+.cell {
+    cursor: pointer;
+}
+
+.cell.revealed {
+    cursor: default;
+}
+
+.leaderboard {
+    width: 20vw;
+    position: absolute;
+    top: 5vh;
+    right: 3%;
+}
