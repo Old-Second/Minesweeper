@@ -17,14 +17,15 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./frontend
     steps:
       - name: Checkout
         uses: actions/checkout@v4
       - uses: pnpm/action-setup@v3
         with:
           version: 8
-      - name: Change Directory
-        run: cd frontend
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
