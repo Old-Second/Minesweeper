@@ -4,7 +4,7 @@ import GameBoard from "./Component/GameBoard";
 import DifficultySelection from "./Component/DifficultySelection";
 import CustomForm from "./Component/CustomForm";
 import TopBar from "./Component/TopBar";
-import Leaderboard from "./Component/LeaderBoard.tsx";
+// import Leaderboard from "./Component/LeaderBoard.tsx";
 
 // 定义单元格的结构
 export interface Cell {
@@ -158,7 +158,7 @@ function Minesweeper() {
             difficultySettings={difficultySettings}/>
         </div>
       </div>
-      <Leaderboard win={win} seconds={seconds}></Leaderboard>
+      {/*<Leaderboard win={win} seconds={seconds}></Leaderboard>*/}
     </div>
   );
 }
